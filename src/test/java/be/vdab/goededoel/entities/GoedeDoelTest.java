@@ -40,4 +40,8 @@ public class GoedeDoelTest {
 	public void goedDoelVerschiltVanEenObjectMetEenAnderType() {
 		assertNotEquals(doel, BigDecimal.ZERO);
 	}
+	@Test
+	public void GoedeDoelenDieGelijkZijnMoetenDezelfdeHashCodeTerugGeven() {
+		assertEquals(doel.hashCode(), new GoedeDoel("CliniClowns").hashCode());
+	}
 }
