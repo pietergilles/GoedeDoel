@@ -12,6 +12,7 @@ public class GoedeDoelTest {
 	private static final String NAAM = "CliniClowns";
 	private GoedeDoel doel;
 
+
 	@Before
 	public void before() {
 		doel = new GoedeDoel(NAAM);
